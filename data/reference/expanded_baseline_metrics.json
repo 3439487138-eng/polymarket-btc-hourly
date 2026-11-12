@@ -1,0 +1,119 @@
+{
+  "generated_utc": "2026-11-10T03:03:56.976797+00:00",
+  "input_sha256": "984da975d47b05cf551f3d5c7099fbbfff61b8f71b09b08efaf8df25ce0ee60e",
+  "pilot_code_sha256": "2106b3c6c0ea27bb9fb838c78104095728ac3623096d50e2271ec7074ce63a0b",
+  "sample_counts": {
+    "train": 4410,
+    "validation": 730,
+    "validation_days": 31
+  },
+  "metrics": {
+    "prior": {
+      "accuracy": 0.5095890410958904,
+      "brier": 0.2499335921324286,
+      "log_loss": 0.6930143617464315
+    },
+    "last": {
+      "accuracy": 0.7479452054794521,
+      "brier": 0.17085843034199372,
+      "log_loss": 0.514200550786346
+    },
+    "binance": {
+      "accuracy": 0.7479452054794521,
+      "brier": 0.17780366151935087,
+      "log_loss": 0.5292341796644858
+    },
+    "poly": {
+      "accuracy": 0.7493150684931507,
+      "brier": 0.1740695196591433,
+      "log_loss": 0.5247213867054695
+    },
+    "joint": {
+      "accuracy": 0.7547945205479452,
+      "brier": 0.17142869218036688,
+      "log_loss": 0.514760231843244
+    }
+  },
+  "joint_comparisons": {
+    "last": {
+      "delta_brier": 0.000570261838373165,
+      "day_bootstrap_95_interval": [
+        -0.0019106630303531802,
+        0.0031806197893922816
+      ]
+    },
+    "poly": {
+      "delta_brier": -0.002640827478776398,
+      "day_bootstrap_95_interval": [
+        -0.004567107923482295,
+        -0.0006047025532249322
+      ]
+    },
+    "binance": {
+      "delta_brier": -0.00637496933898397,
+      "day_bootstrap_95_interval": [
+        -0.011423118925261617,
+        -0.0016999300383292427
+      ]
+    }
+  },
+  "pilot_comparison": {
+    "reproduced": true,
+    "verified_input_overlap": 364,
+    "validation_overlap": 121,
+    "original": {
+      "prior": {
+        "accuracy": 0.4462809917355372,
+        "brier": 0.25426858685369724,
+        "log_loss": 0.7016964360846683
+      },
+      "last": {
+        "accuracy": 0.7355371900826446,
+        "brier": 0.1823934099788827,
+        "log_loss": 0.5464288942203729
+      },
+      "binance": {
+        "accuracy": 0.768595041322314,
+        "brier": 0.20001979715687213,
+        "log_loss": 0.5835805657954781
+      },
+      "poly": {
+        "accuracy": 0.768595041322314,
+        "brier": 0.1844817997017458,
+        "log_loss": 0.551369609166107
+      },
+      "joint": {
+        "accuracy": 0.7520661157024794,
+        "brier": 0.18472199545438253,
+        "log_loss": 0.5506243122618836
+      }
+    },
+    "expanded_training_same_validation": {
+      "prior": {
+        "accuracy": 0.5537190082644629,
+        "brier": 0.24953332032137582,
+        "log_loss": 0.6922137961696014
+      },
+      "last": {
+        "accuracy": 0.7355371900826446,
+        "brier": 0.1823934099788827,
+        "log_loss": 0.5464288942203729
+      },
+      "binance": {
+        "accuracy": 0.743801652892562,
+        "brier": 0.18859513804432027,
+        "log_loss": 0.5567323228226402
+      },
+      "poly": {
+        "accuracy": 0.743801652892562,
+        "brier": 0.184695670005931,
+        "log_loss": 0.5519932439146894
+      },
+      "joint": {
+        "accuracy": 0.7520661157024794,
+        "brier": 0.18265022231630856,
+        "log_loss": 0.5448320941102938
+      }
+    }
+  }
+}
